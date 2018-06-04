@@ -1,13 +1,13 @@
 class UserApi::Create < GraphQL::Function
-  argument :user, Types::SignUpType
+  argument :user, !Types::SignUpType
 
-  type Types::UserType
+  type !Types::UserType
 
   def call(_obj, args, _ctx)
     User.create!(
       name: args[:user][:name],
-      email: args[:user][:credentials][:email],
-      password: args[:user][:credentials][:password]
+      email: args[:user][:email],
+      password: args[:user][:password]
     )
   end
 end
