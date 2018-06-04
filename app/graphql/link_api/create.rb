@@ -1,5 +1,5 @@
 
-class LinkQl::Create < GraphQL::Function
+class LinkApi::Create < GraphQL::Function
   # arguments passed as "args"
   argument :description, !types.String
   argument :url, !types.String

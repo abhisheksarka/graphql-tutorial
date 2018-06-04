@@ -1,4 +1,4 @@
-class LinkQl::Index < GraphQL::Function
+class LinkApi::Index < GraphQL::Function
   type !types[Types::LinkType]
 
   def call(_obj, args, _ctx)

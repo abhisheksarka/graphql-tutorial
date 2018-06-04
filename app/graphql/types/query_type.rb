@@ -1,5 +1,5 @@
 Types::QueryType = GraphQL::ObjectType.define do
   name "Query"
-  field :linkIndex, function: LinkQl::Index.new
-  field :linkShow, function: LinkQl::Show.new
+  field :linkIndex, function: LinkApi::Index.new
+  field :linkShow, function: LinkApi::Show.new
 end

@@ -1,4 +1,4 @@
-class LinkQl::Show < GraphQL::Function
+class LinkApi::Show < GraphQL::Function
   type Types::LinkType
   argument :id, !types.Int
 
