@@ -1,7 +1,7 @@
-class LinkApi::Index < GraphQL::Function
+class LinkApi::Index < BaseApi
   type !types[Types::LinkType]
 
-  def call(_obj, args, _ctx)
+  def action(_obj, args, _ctx)
     ::Link.all
   end
 end
