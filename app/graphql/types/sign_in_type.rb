@@ -1,5 +1,5 @@
 Types::SignInType = GraphQL::InputObjectType.define do
-  name 'Sign In'
+  name 'SignIn'
 
   argument :email, !types.String
   argument :password, !types.String
